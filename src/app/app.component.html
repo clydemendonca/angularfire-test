@@ -1,0 +1,14 @@
+<div class="container">
+  <table class="table table-striped">
+    <tr>
+      <th>Lat</th>
+      <th>Long</th>
+      <th>Partner Id</th>
+    </tr>
+    <tr *ngFor="let truck of trucks | async">
+      <td>{{ truck.lat }}</td>
+      <td>{{ truck.long }}</td>
+      <td>{{ truck.partner_id }}</td>
+    </tr>
+  </table>
+</div>
